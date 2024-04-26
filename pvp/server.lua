@@ -1,5 +1,5 @@
 local cc = "#8667EB"
-local prefix = cc.."[Gare]#ffffff "
+local prefix = cc.."[PVP]#ffffff "
 local pvps = {}
 
 function sendPvp(player, cmd, target, rounds, cash)
