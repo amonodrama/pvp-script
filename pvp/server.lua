@@ -55,12 +55,6 @@ outputChatBox(prefix..getPlayerName(target).."#ffffff did not accept your PVP re
 outputChatBox(prefix.."PVP request from "..getPlayerName(player).." #ffffffgot cancelled because you did not reply in 10 seconds.",target,255,0,0,true)
 end
 
-function idio(player,cmd)
-pvps[player] = {['dimension'] = mydimension, ['sender'] = findPlayerByName("ert"), ['rounds'] = 3, ['roundswon'] = 0, ['reward'] = 1000, ['state'] = "accept"}
-pvps[findPlayerByName("ert")] = {['dimension'] = mydimension, ['sender'] = player, ['rounds'] = 3, ['roundswon'] = 0, ['reward'] = 1000, ['state'] = "accept"}
-end
-addCommandHandler("idio",idio)
-
 function replyPvp(player, cmd, value) 
   if pvps[player] then
     if value == "accept" then
